@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <ion-img style="height: 22px;" src="assets/Hostel-Mate-logo.png" ></ion-img>
+        </ion-col>
+        <ion-col size="11">
+          <ion-title>
+            Home
+          </ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+    <ion-img style="height: 22px; padding-left: 25px;" src="assets/Hostel-Mate-logo.png" slot="start" *ngIf="!search">
+    </ion-img>
+
+    <ion-searchbar showCancelButton="always" *ngIf="search" (ionCancel)="search = false" (focusout)="search = false"></ion-searchbar>
+
+    <ion-button (click)="search = true" expand="block" fill="clear" shape="round" slot="end" *ngIf="!search" color="" color="light">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
