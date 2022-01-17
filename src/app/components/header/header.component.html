@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar class="thm-header" color="thm-header"> <!-- color="primary" -->
     <!-- <ion-grid>
       <ion-row>
         <ion-col size="1">
@@ -18,7 +18,7 @@
 
     <ion-searchbar showCancelButton="always" *ngIf="search" (ionCancel)="search = false" (focusout)="search = false"></ion-searchbar>
 
-    <ion-button (click)="search = true" expand="block" fill="clear" shape="round" slot="end" *ngIf="!search" color="" color="light">
+    <ion-button (click)="search = true" expand="block" fill="clear" shape="round" slot="end" *ngIf="!search" f-color="light">
       <ion-icon name="search"></ion-icon>
     </ion-button>
   </ion-toolbar>

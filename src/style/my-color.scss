@@ -1,0 +1,105 @@
+/* ====================== static color ====================== */
+
+.my-bg-white {
+  background-color: #fff;
+}
+
+.my-text-white {
+  color: #fff;
+}
+
+/* ====================== end static color ====================== */
+
+/* ====================== dynamic color ====================== */
+
+/* ------------------------------------ light mode ------------------------------------ */
+
+:root {
+  --ion-color-thm-header: #b6b6b6;
+  --ion-color-thm-header-contrast: #000;
+}
+.thm-header {
+  background-color: #f3f3f3 !important;
+  color: #000 !important;
+  ion-button {
+    color: #000 !important;
+  }
+}
+
+// @media (prefers-color-scheme: light) {
+
+  .thm-clr-text {
+    color: #000;
+  }
+
+  // strong
+
+  .thm-clr-bg {
+    background-color: #fff;
+  }
+
+  // light
+  .thm-clr-bg-2 {
+    background-color: #b6b6b6 !important;
+    color: #000 !important;
+  }
+
+
+  // high light
+  .thm-clr-bg-hl-1 {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .thm-clr-bg-hl-2 {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+// }
+
+/* ------------------------------------ end light mode ------------------------------------ */
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----  */
+
+/* ------------------------------------ dark mode ------------------------------------ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /** primary **/
+    --ion-color-thm-header: #212121;
+    --ion-color-thm-header-contrast: #fff;
+  }
+  .thm-header {
+    background-color: #212121 !important;
+    color: #fff !important;
+    ion-button {
+      color: #fff !important;
+    }
+  }
+
+  .thm-clr-text {
+    color: #fff;
+  }
+
+  // strong
+  .thm-clr-bg {
+    background-color: #181818;
+  }
+
+  // light
+  .thm-clr-bg-2 {
+    background-color: #212121;
+  }
+
+  // high light
+  .thm-clr-bg-hl-1 {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .thm-clr-bg-hl-2 {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+}
+
+/* ------------------------------------ end dark mode ------------------------------------ */
+
+/* ====================== end dynamic color ====================== */
