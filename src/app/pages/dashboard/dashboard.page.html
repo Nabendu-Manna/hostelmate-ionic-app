@@ -10,7 +10,25 @@
   <ion-grid fixed>
     <ion-row>
       <ion-col size="6">
-        <div class="vault">
+        
+        <ion-card>
+          <ion-item lines="none">
+            <ion-avatar slot="start" class="avatar-box">
+              <!-- <ion-img [src]="notificationItem.img_file" (ionError)="$event.srcElement.shadowRoot.children[0].onerror = null; $event.srcElement.shadowRoot.children[0].src='https://www.gibl.in/UI/assets/notifications-img-error.png'"></ion-img> -->
+            </ion-avatar>
+
+            <!-- <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button> -->
+          </ion-item>
+
+          <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+
+        <!-- <div class="vault">
           <div style="border-radius: 10px 10px 0 0;
             /* color: #000; */
             /* background-color: #49ffc2; */
@@ -20,13 +38,14 @@
               </ion-label>
           </div>
           <p>2500 ₹</p>
-        </div>
+        </div> -->
       </ion-col>
       <ion-col size="6">
         <div>
           Hostel Wallet
         </div>
       </ion-col>
+      
     </ion-row>
   </ion-grid>
 
