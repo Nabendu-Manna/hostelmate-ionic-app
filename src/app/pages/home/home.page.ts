@@ -15,5 +15,4 @@ export class Tab1Page implements OnInit{
   ionViewWillEnter(){
     console.log('hi -- 1');
   }
-  
 }

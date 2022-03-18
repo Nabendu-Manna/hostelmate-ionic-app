@@ -64,11 +64,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /** primary **/
-    --ion-color-thm-header: #50585c;
+    --ion-color-thm-header: #565b5e;
     --ion-color-thm-header-contrast: #fff;
   }
   .thm-header {
-    background-color: #50585c !important;
+    background-color: #90909063 !important;
     color: #fff !important;
     ion-button {
       color: #fff !important;
@@ -81,7 +81,7 @@
 
   // strong
   .thm-clr-bg {
-    background-color: #181818;
+    background-color: #292929;
   }
 
   // light
@@ -92,7 +92,7 @@
 
   // high light
   .thm-clr-bg-hl-1 {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.226);
   }
 
   .thm-clr-bg-hl-2 {
