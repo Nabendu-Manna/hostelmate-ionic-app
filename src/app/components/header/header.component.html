@@ -13,7 +13,7 @@
       </ion-row>
     </ion-grid> -->
 
-    <ion-img style="height: 22px; padding-left: 25px;" src="assets/Hostel-Mate-logo.png" slot="start" *ngIf="!search">
+    <ion-img style="height: 100%; padding-left: 25px;" src="assets/Hostel-Mate-logo.png" slot="start" *ngIf="!search">
     </ion-img>
 
     <ion-searchbar showCancelButton="always" *ngIf="search" (ionCancel)="search = false" (focusout)="search = false"></ion-searchbar>
