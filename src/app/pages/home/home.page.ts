@@ -14,16 +14,29 @@ export class Tab1Page implements OnInit{
   constructor(protected roomPostService: RoomPostService) {}
 
   ngOnInit(){
-    console.log('hi');
     this.roomPostService.getAllRoom().subscribe((data) => {
       this.roomPosts = data;
       this.loaded = true;
-      console.log(data, "<== roomPosts");
-
+      // console.log(data, "<== roomPosts");
     });
   }
 
+  doRefresh(event){
+    this.roomPosts = [];
+    this.loaded = false;
+    this.roomPostService.getAllRoom().subscribe((data) => {
+      this.roomPosts = data;
+      this.loaded = true;
+
+      event.target.complete();
+    });
+
+    // setTimeout(() => {
+    //   event.target.complete();
+    // }, 2000);
+  }
+
   ionViewWillEnter(){
-    console.log('hi -- 1');
+    // console.log('hi -- 1');
   }
 }
