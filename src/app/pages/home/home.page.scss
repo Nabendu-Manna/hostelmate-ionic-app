@@ -1,0 +1,13 @@
+.card-more-btn {
+  --padding-left: 0px !important;
+  // #shadow-root {
+    button {
+      padding-left: 0px;
+    }
+  // }
+}
+
+.action-btns {
+  display: flex;
+  justify-content: space-between;
+}
